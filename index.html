@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <section class="socialMedia">
-      <ul class="sci">
+    <section class="social-media">
+      <ul class="social-class">
         <li data-text="Facebook" data-color="#1877f2">
           <a
             href="https://web.facebook.com/mahamaphilip"
@@ -57,15 +57,15 @@
     <script src="js/vanilla-tilt.min.js"></script>
     <script>
       // Library for the tilt movement
-      VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+      VanillaTilt.init(document.querySelectorAll(".social-class li a"), {
         max: 30,
         speed: 400,
         glare: true,
         "max-glare": 1,
       });
 
-      let list = document.querySelectorAll(".sci li");
-      let bg = document.querySelector(".socialMedia");
+      let list = document.querySelectorAll(".social-class li");
+      let bg = document.querySelector(".social-media");
 
       list.forEach(element => {
         element.addEventListener("mouseenter", function (event) {

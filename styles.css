@@ -6,7 +6,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-.socialMedia {
+body {
+  background: #dedede;
+}
+
+.social-media {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,16 +18,16 @@
   transition: 0.5s;
 }
 
-.sci {
+.social-class {
   display: flex;
   position: relative;
 }
 
-.sci li {
+.social-class li {
   list-style: none;
 }
 
-.sci li::before {
+.social-class li::before {
   content: attr(data-text);
   position: absolute;
   top: 50%;
@@ -37,12 +41,12 @@
   color: black;
 }
 
-.sci li:hover::before {
+.social-class li:hover::before {
   opacity: 0.1;
   transform: translate(-50%, calc(-50% + 150px));
 }
 
-.sci li a {
+.social-class li a {
   position: relative;
   display: inline-block;
   width: 120px;
@@ -66,32 +70,32 @@
   border-radius: 10px;
 }
 
-.sci li a:hover.facebook {
+.social-class li a:hover.facebook {
   background: #1877f2;
 }
 
-.sci li a:hover.linkedin {
+.social-class li a:hover.linkedin {
   background: #0e76a8;
 }
 
-.sci li a:hover.github {
+.social-class li a:hover.github {
   background: silver;
 }
 
-.sci li a:hover.portfolio {
+.social-class li a:hover.portfolio {
   background: #1fbf1f;
 }
 
-/* .sci li a:hover.instagram {
+/* .social-class li a:hover.instagram {
   background: #e4405f;
 } */
 
-.sci li a .fa {
+.social-class li a .fa {
   transition: 0.25s;
   pointer-events: none;
 }
 
-.sci li a:hover .fa {
+.social-class li a:hover .fa {
   color: #fff;
   transform: scale(1.75) translateZ(50px);
 }
